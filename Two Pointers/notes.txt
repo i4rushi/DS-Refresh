@@ -1,0 +1,30 @@
+- Built for linear structures (arrays, linked lists, strings)
+- Allows for complexity reduction to O(n)
+    - rather than O(n^2) time complexity in brute force solutions
+
+-Two Pointers in the same direction
+    - good for when you are scanning the data in a single pass
+    - ex. fast and slow 
+        - used to detect cycles in a linked list or to find the middle
+            - cycle if at any point slow == fast
+            - middle is at slow when fast reaches the end (in even cases slow ends up at second middle of list)
+        - slow moves one step at a time 
+        - fast moves two steps
+
+-Two Pointers in the opposite direction
+    - good for finding pairs / comparing elems at opposite ends of the data structure
+    - ex. two nums that sum to target value
+        - eliminates unecessary comparisons
+    - check current condition at opposite ends
+    - move one pointer inward if condition not matched
+    - each pointer moves one at a time
+
+    - especially powerful in sorted arrays
+
+- Two pointes benefit by: (time and space optimization)
+    - reducing iterations
+    - tracking relation between two places
+    - avoiding extra space 
+
+- Example Problems:
+    - Palindromes, Reversals, merging sorted data, K sized comparisons
